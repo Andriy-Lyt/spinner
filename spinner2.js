@@ -1,9 +1,9 @@
-const spinner = (str, delay, numOfSpines) => {
+const spinner = (str, delay, numOfSpins) => {
   let line = "";
   let initDelay = delay;
-  let SpinCounter = 0;
+  let spinCounter = 0;
 
-  while(SpinCounter < numOfSpines) {
+  while(spinCounter < numOfSpins) {
 
     for(let letter of str) {
 
@@ -15,7 +15,7 @@ const spinner = (str, delay, numOfSpines) => {
       delay += initDelay;               // console.log("delay: ", delay);
     } // for
 
-    SpinCounter++;                      //  console.log("SpinCounter: ", SpinCounter);
+    spinCounter++;                      //  console.log("spinCounter: ", spinCounter);
 
   } // while
 } // spinner()
